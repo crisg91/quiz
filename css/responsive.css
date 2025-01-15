@@ -1,0 +1,21 @@
+/* Tablet breakpoint */
+@media (max-width: 890px) {
+    .logoDesktop {
+        display: none;
+    }
+    
+    .logoMobile {
+        display: block;
+    }
+
+    .container {
+        padding: 35px;
+    }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 640px) {
+    .container {
+        padding: 25px;
+    }
+}

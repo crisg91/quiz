@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="https://cdn.siroko.com/favicon.svg" type="image/svg+xml">
+        <title>Quiz</title>
+        
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        <main class="main">
+            <div class="container">
+                <div class="header">
+                    <a href="index.html"><img src="assets/icons/SK.svg" title="Siroko" alt="Siroko" class="logoMobile"/><img src="assets/images/logo.svg" title="Siroko" alt="Siroko" class="logoDesktop"/></a>
+                </div>
+
+                <!-- STEP 1 -->
+                <section id="step1" class="itemStep">
+                    <div class="stepHeader">
+                        <p class="steps">Paso 1 de 2</p>
+                        <h1 class="title">¡Vamos allá!</h1>
+                        <p class="description">Has llegado hasta el test de Siroko. Responde las siguientes preguntas y genera tu código premiado a medida.</p>
+                    </div>
+
+                    <div class="stepContent">
+                        <p class="cuestion">Uso Siroko desde...</p>
+
+                        <label class="option">
+                            <input type="radio" name="sirokoUse" value="2016">
+                            2016                   
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="sirokoUse" value="2017">
+                            2017                  
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="sirokoUse" value="2018">
+                            2018                  
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="sirokoUse" value="2019">
+                            2019                   
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="sirokoUse" value="2020">
+                            2020                   
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="sirokoUse" value="2021">
+                            2021                   
+                        </label>
+
+                        <button class="btn nextButton" disabled>Siguiente</button>
+                    </div>
+                </section>
+
+                 <!-- STEP 2 -->
+                <section id="step2" class="itemStep displayNone">
+                    <div class="stepHeader">
+                        <p class="steps">Paso 2 de 2</p>
+                        <h1 class="title">Vamos, una más</h1>
+                    </div>
+
+                    <div class="stepContent">
+                        <p class="cuestion">Por unas gafas Siroko yo...</p>
+
+                        <label class="option">
+                            <input type="radio" name="wouldDo" value="Segaría a navaja">
+                            Segaría a navaja                 
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="wouldDo" value="Rechazaría un cachopo">
+                            Rechazaría un cachopo               
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="wouldDo" value="Renunciaría a mis tierras">
+                            Renunciaría a mis tierras            
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="wouldDo" value="Regalaría una ternera">
+                            Regalaría una ternera              
+                        </label>
+
+                        <button class="btn nextButton" disabled>Siguiente</button>
+                    </div>
+                </section>
+
+                <!-- STEP 3 -->
+                <section id="step3" class="itemStep displayNone">
+                    <div class="stepHeader">
+                        <p class="steps">Tu premio está listo</p>
+                        <h1 class="title">¡Enhorabuena!</h1>
+                    </div>
+
+                    <div class="stepContent">
+                        <p class="cuestion">Lo prometido es deuda</p>
+
+                        <div class="codeContent">
+                            <p class="code"></p>
+                            <p class="copyBtn">Copiar</p>
+                        </div>
+                        <div class="message displayNone">
+                            <p>Código copiado correctamente</p>
+                        </div>
+
+                        <p class="description">Introduce este código en tu próxima compra para conseguir tu premio. <br/>¡Disponible durante 20 minutos!</p>
+
+                        <div class="contentCounter timer">
+                            <i class="timerIcon"></i><span id="countdown">20:00<span>
+                        </div>
+                        <div class="contentCounter timerOver displayNone">
+                            <i class="timerIcon"></i>Código caducado. <span class="resetCounter">Reiniciar.</span>
+                        </div>
+
+                        <a href="https://www.siroko.com" target="_blank" class="btn">Ir a Siroko.com</a>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>2016 - 2021 Siroko Solutions S.L.</p>
+                <p>Todos los derechos reservados. <a href="#" target="_blank">Ver bases.</a></p>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

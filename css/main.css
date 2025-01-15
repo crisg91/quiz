@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'Liberator Siroko';
+    src: url('../assets/fonts/LiberatorSIROKO-Heavy.woff2') format('woff2'),
+        url('../assets/fonts/LiberatorSIROKO-Heavy.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    background-image: url("../assets/images/background.jpg");
+    background-position: center;
+    background-size: cover;
+} 
+
+.main {
+    min-height: 100vh;
+    color: #ffffff;
+} 
+
+.main .container {
+    gap: 25px;
+} 
+
+.container {
+    width: 940px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+
+.displayNone {
+    display: none !important;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: start;
+}
+
+.logoDesktop {
+    width: 145px; 
+}
+
+.logoMobile {
+    width: 28px; 
+    display: none;
+}
+
+/* CONTENT */
+.steps {
+    font-family: "Inter", serif;
+    background-color: #5DC2BD;
+    color: #2C5E5B; 
+    padding: 3px 7px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 11px;
+}
+
+.itemStep {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.stepHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+}
+
+.title {
+    font-family: "Liberator Siroko", serif;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+.description {
+    font-family: "Inconsolata", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.stepContent {
+    background-color: #311429;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.cuestion {
+    color: #EFE5C3;
+    font-family: "Inter", serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+.option {
+    padding: 12px;
+    border-radius: 6px;
+    gap: 10px;
+    display: flex;
+    background-color: #FFFFFF17;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    font-family: "Inconsolata", serif;
+    cursor: pointer;
+    user-select: none;
+}
+
+.option input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    font: inherit;
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+.option input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+  
+.option input[type="radio"]::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transform: scale(0);
+    background-color: #ffffff;
+}
+
+.option.selected {
+    background-color: #C92F58;
+}
+
+.codeContent {
+    border-radius: 2px;
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(189,189,189,1) 0%, rgba(255,255,255,1) 100%);
+    display: flex;
+    color: #000000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.code {
+    font-family: "Inconsolata", serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.copyBtn {
+    font-family: "Inconsolata", serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    padding: 6px 9px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    user-select: none;
+}
+
+.contentCounter {
+    border-radius: 3px;
+    padding: 10px 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+} 
+
+.timerIcon {
+    display: contents;
+}
+
+.timerIcon:after {
+    display: inline-block;
+    content: "";
+    background-image: url("../assets/icons/Countdown.svg");
+    background-position: center;
+    background-size: 23px;
+    width: 23px;
+    height: 23px;
+}
+
+.timer {
+    background-color: #2C0C23;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 32px;
+    font-family: "Inconsolata", serif;
+    user-select: none;
+}
+
+.timerOver {
+    background-color: #C51414;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    font-family: "Inconsolata", serif;
+}
+
+.resetCounter {
+    text-decoration: underline;
+    cursor: pointer
+}
+
+.btn {
+    background-color: #339B95;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: "Inter", serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:after {
+    display: inline-block;
+    content: "";
+    background-image: url("../assets/icons/Right.svg");
+    background-position: center;
+    background-size: 21px;
+    width: 21px;
+    height: 10px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:disabled { 
+    cursor: not-allowed;  
+    opacity: 0.6; 
+}
+
+.message {
+    position: absolute;
+    background-color: #444444;
+    color: #ffffff;
+    padding: 5px 20px;
+    font-size: 12px;
+    right: 20px;
+    top: 110px;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+.footer {
+    font-family: "Inconsolata", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    background-color: #000000;
+    color: #BBBBBB;
+}
+
+.footer .container {
+    gap: 10px;
+}
+
+.footer a {
+    font-weight: 700;
+    color: #ffffff;
+}
